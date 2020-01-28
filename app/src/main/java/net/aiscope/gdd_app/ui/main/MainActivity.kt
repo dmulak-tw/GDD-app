@@ -13,9 +13,9 @@ import com.karumi.dexter.listener.single.PermissionListener
 import kotlinx.android.synthetic.main.activity_main.*
 import net.aiscope.gdd_app.R
 import net.aiscope.gdd_app.ui.selectDisease.SelectDiseaseActivity
+import net.aiscope.gdd_app.ui.selectDisease.SelectDiseaseView
 
-class MainActivity : AppCompatActivity() {
-
+class MainActivity : AppCompatActivity(), SelectDiseaseView {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -46,5 +46,17 @@ class MainActivity : AppCompatActivity() {
             .withListener(listener)
             .onSameThread()
             .check()
+    }
+
+    override fun captureImage(nextImageName: String, nextMaskName: String) {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun showSuccessToast() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun showFailureToast() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 }

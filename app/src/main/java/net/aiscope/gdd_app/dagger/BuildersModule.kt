@@ -6,6 +6,7 @@ import dagger.android.AndroidInjector
 import dagger.multibindings.ClassKey
 import dagger.multibindings.IntoMap
 import net.aiscope.gdd_app.ui.capture.CaptureImageActivity
+import net.aiscope.gdd_app.ui.main.MainActivity
 import net.aiscope.gdd_app.ui.mask.MaskActivity
 import net.aiscope.gdd_app.ui.metadata.MetadataActivity
 import net.aiscope.gdd_app.ui.newHealthFacility.NewHealthFacilityActivity
@@ -21,8 +22,8 @@ abstract class BuildersModule {
 
     @Binds
     @IntoMap
-    @ClassKey(SelectDiseaseActivity::class)
-    abstract fun bindSelectDiseaseActivityInjectorFactory(factory: SelectDiseaseSubComponents.Factory):
+    @ClassKey(MainActivity::class)
+    abstract fun bindSelectDiseaseActivityInjectorFactory(factory: MainSubComponents.Factory):
             AndroidInjector.Factory<*>
 
     @Binds

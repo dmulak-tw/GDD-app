@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/mySpinnerItemStyle"
     android:gravity="center"
     android:orientation="vertical">
 
@@ -13,20 +14,10 @@
         android:entries="@array/diseases"
         android:popupBackground="@color/colorPrimaryDark"
         android:spinnerMode="dropdown"
-        app:layout_constraintEnd_toEndOf="@+id/text_select_disease_spinner_hint"
-        app:layout_constraintStart_toStartOf="@+id/text_select_disease_spinner_hint"
-        app:layout_constraintTop_toBottomOf="@+id/text_select_disease_spinner_hint"
-        android:layout_height="wrap_content"
-        android:layout_width="0dp" />
+        android:layout_height="48dp"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
 
-    <TextView
-        android:id="@+id/text_select_disease_spinner_hint"
-        style="@style/TextHint"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="24dp"
-        android:text="@string/text_select_disease_spinner_hint"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,20 +7,20 @@ import dagger.Provides
 import net.aiscope.gdd_app.repository.HospitalRepository
 import net.aiscope.gdd_app.repository.SampleRepository
 import net.aiscope.gdd_app.repository.SharedPreferencesRepository
-import net.aiscope.gdd_app.ui.selectDisease.SelectDiseaseActivity
+import net.aiscope.gdd_app.ui.main.MainActivity
 import net.aiscope.gdd_app.ui.selectDisease.SelectDiseasePresenter
 import net.aiscope.gdd_app.ui.selectDisease.SelectDiseaseView
 
 @Module
-abstract class SelectDiseaseModule {
+abstract class MainModule {
 
     @Binds
     @PerActivity
-    internal abstract fun provideView(view: SelectDiseaseActivity): SelectDiseaseView
+    internal abstract fun provideView(view: MainActivity): SelectDiseaseView
 
     @Binds
     @PerActivity
-    internal abstract fun activity(activity: SelectDiseaseActivity): Activity
+    internal abstract fun activity(activity: MainActivity): Activity
 
     @Module
     companion object {

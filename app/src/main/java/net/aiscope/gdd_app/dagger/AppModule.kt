@@ -11,7 +11,7 @@ import net.aiscope.gdd_app.repository.SampleRepository
 
 @Module(subcomponents = [
     (HospitalSubComponents::class),
-    (SelectDiseaseSubComponents::class),
+    (MainSubComponents::class),
     (MetadataSubComponents::class),
     (CaptureImageSubComponents::class),
     (MaskSubComponents::class)

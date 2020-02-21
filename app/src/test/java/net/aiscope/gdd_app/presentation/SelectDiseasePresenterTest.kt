@@ -3,8 +3,6 @@ package net.aiscope.gdd_app.presentation
 import com.nhaarman.mockito_kotlin.*
 import net.aiscope.gdd_app.model.Sample
 import net.aiscope.gdd_app.repository.SampleRepository
-import net.aiscope.gdd_app.ui.selectDisease.SelectDiseasePresenter
-import net.aiscope.gdd_app.ui.selectDisease.SelectDiseaseView
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.InjectMocks
